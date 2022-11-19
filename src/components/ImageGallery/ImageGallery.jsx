@@ -11,7 +11,7 @@ export class Gallery extends Component {
         <>
        
         <ImageGallery className="gallery">
-            <GalleryItems images={ this.props.log } test={this.props.test} />
+            <GalleryItems images={ this.props.log } selectedPicture={this.props.selectedPicture} />
 
         </ImageGallery> 
         

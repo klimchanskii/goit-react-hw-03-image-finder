@@ -4,36 +4,7 @@ import {ImageGalleryItemImage,ImageGalleryItem} from './ImageGalleryItem.styled'
 
 
 export class GalleryItems extends Component {
-    // state = {
-    //     modal: false,
-
-    // }
-    // closeModa;
-
-    // openModal = () => {
-
-    //     this.setState({
-    //         modal: true,
-      
-    //     })
-    // }
-    // closeModal = () => {
-    //       this.setState({
-    //         modal: false,
-      
-    //     })
-    // }
-//     largeImageFind = event => {
-//     const openImage = this.state.gallery.find(
-//       image => image.webformatURL === event.currentTarget.src
-//     ).largeImageURL;
-//     return openImage;
-//   };
-    test = (e) => {
-        console.log(e.currentTarget);
-    } 
-
-
+ 
     render() {
 
         const {images} = this.props
@@ -43,7 +14,7 @@ export class GalleryItems extends Component {
               
             >
                 <ImageGalleryItemImage
-                    onClick={this.props.test}
+                    onClick={this.props.selectedPicture}
                     src={image.webformatURL} alt=""
                
                 />
